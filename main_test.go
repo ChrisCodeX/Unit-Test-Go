@@ -3,8 +3,9 @@ package main
 import "testing"
 
 func TestAddition(t *testing.T) {
-	total := Addit(5, 5)
+	total := Addition(5, 5)
 	if total != 10 {
-		t.Errorf("")
+		t.Errorf("Addition was incorrect, got %d expected %d", total, 10)
 	}
+
 }
