@@ -7,5 +7,4 @@ func TestAddition(t *testing.T) {
 	if total != 10 {
 		t.Errorf("Addition was incorrect, got %d expected %d", total, 10)
 	}
-
 }
