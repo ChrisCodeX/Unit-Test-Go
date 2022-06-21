@@ -27,5 +27,6 @@ func TestMax(t *testing.T) {
 		n int
 	}{
 		{4, 2, 4},
+		{3, 2, 3},
 	}
 }
