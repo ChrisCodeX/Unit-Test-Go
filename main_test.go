@@ -19,3 +19,13 @@ func TestAddition(t *testing.T) {
 		}
 	}
 }
+
+func TestMax(t *testing.T) {
+	tables := []struct {
+		a int
+		b int
+		n int
+	}{
+		{4, 2, 4},
+	}
+}
