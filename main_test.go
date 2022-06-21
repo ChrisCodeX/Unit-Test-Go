@@ -2,6 +2,7 @@ package main
 
 import "testing"
 
+// Function to test the addition function
 func TestAddition(t *testing.T) {
 	tables := []struct {
 		a int
