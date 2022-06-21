@@ -31,6 +31,12 @@ func TestSubtraction(t *testing.T) {
 		{5, 4, 1},
 		{6, 2, 4},
 	}
+	for _, item := range tables {
+		s := Subtraction(item.a, item.b)
+		if item.n != s {
+			t.Errorf("Subtraction was incorrect, got %d, expected %d", s, item.n)
+		}
+	}
 }
 
 // Function to test the max function
