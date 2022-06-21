@@ -8,9 +8,9 @@ func Subtraction(x, y int) int {
 	return x - y
 }
 
-func GetMax(x, y int) int {
-	if x > y {
-		return x
+func GetMax(a, b int) int {
+	if a > b {
+		return a
 	}
-	return y
+	return b
 }
