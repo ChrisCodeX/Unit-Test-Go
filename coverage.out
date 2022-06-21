@@ -1,0 +1,6 @@
+mode: set
+github.com/ChrisCodeX/Testing-Go/main.go:3.29,5.2 1 1
+github.com/ChrisCodeX/Testing-Go/main.go:7.32,9.2 1 0
+github.com/ChrisCodeX/Testing-Go/main.go:11.27,12.11 1 1
+github.com/ChrisCodeX/Testing-Go/main.go:15.2,15.10 1 0
+github.com/ChrisCodeX/Testing-Go/main.go:12.11,14.3 1 1
