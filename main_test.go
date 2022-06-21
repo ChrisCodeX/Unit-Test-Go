@@ -29,4 +29,11 @@ func TestMax(t *testing.T) {
 		{4, 2, 4},
 		{3, 2, 3},
 	}
+
+	for _, item := range tables {
+		max := GetMax(item.a, item.b)
+		if max != item.n {
+
+		}
+	}
 }
