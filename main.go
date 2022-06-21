@@ -7,3 +7,10 @@ func Addition(x, y int) int {
 func Subtraction(x, y int) int {
 	return x - y
 }
+
+func GetMax(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
+}
