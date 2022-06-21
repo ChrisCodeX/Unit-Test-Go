@@ -21,6 +21,7 @@ func TestAddition(t *testing.T) {
 	}
 }
 
+// Function to test the max function
 func TestMax(t *testing.T) {
 	tables := []struct {
 		a int
@@ -29,8 +30,8 @@ func TestMax(t *testing.T) {
 	}{
 		{4, 2, 4},
 		{3, 2, 3},
+		{2, 5, 5},
 	}
-
 	for _, item := range tables {
 		max := GetMax(item.a, item.b)
 		if max != item.n {
