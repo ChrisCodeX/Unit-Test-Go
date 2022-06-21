@@ -33,7 +33,7 @@ func TestMax(t *testing.T) {
 	for _, item := range tables {
 		max := GetMax(item.a, item.b)
 		if max != item.n {
-
+			t.Errorf("GetMax was incorrect, got %d, expected %d", max, item.n)
 		}
 	}
 }
