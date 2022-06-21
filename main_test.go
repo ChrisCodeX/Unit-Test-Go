@@ -21,6 +21,18 @@ func TestAddition(t *testing.T) {
 	}
 }
 
+// Function to test the substraction function
+func TestSubtraction(t *testing.T) {
+	tables := []struct {
+		a int
+		b int
+		n int
+	}{
+		{5, 4, 1},
+		{6, 2, 4},
+	}
+}
+
 // Function to test the max function
 func TestMax(t *testing.T) {
 	tables := []struct {
