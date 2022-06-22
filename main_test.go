@@ -40,7 +40,7 @@ func TestSubtraction(t *testing.T) {
 }
 
 // Function to test the max function
-func TestMax(t *testing.T) {
+func TestGetMax(t *testing.T) {
 	tables := []struct {
 		a int
 		b int
