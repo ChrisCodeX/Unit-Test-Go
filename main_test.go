@@ -66,7 +66,7 @@ func TestFibonacci(t *testing.T) {
 	}{
 		{1, 1},
 		{8, 21},
-		{50, 12586269025},
+		{44, 701408733},
 	}
 	for _, item := range tables {
 		fib := Fibonacci(item.a)
