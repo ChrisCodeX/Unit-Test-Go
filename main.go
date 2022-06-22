@@ -15,9 +15,9 @@ func GetMax(a, b int) int {
 	return b
 }
 
-func SumFibonacci(n int) int {
+func Fibonacci(n int) int {
 	if n <= 1 {
 		return n
 	}
-	return SumFibonacci(n-1) + SumFibonacci(n-2)
+	return Fibonacci(n-1) + Fibonacci(n-2)
 }

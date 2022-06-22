@@ -59,3 +59,12 @@ func TestMax(t *testing.T) {
 }
 
 // Function to test Fibonacci function
+func TestFibonacci(t *testing.T) {
+	tables := []struct {
+		a int
+		n int
+	}{
+		{1, 1},
+		{8, 21},
+	}
+}
