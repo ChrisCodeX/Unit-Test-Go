@@ -1,3 +1,3 @@
-module github.com/ChrisCodeX/Testing-Go
+module github.com/ChrisCodeX/Unit-Test-Go
 
 go 1.17
