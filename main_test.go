@@ -57,3 +57,5 @@ func TestMax(t *testing.T) {
 		}
 	}
 }
+
+// Function to test Fibonacci function
