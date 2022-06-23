@@ -11,7 +11,7 @@ func TestGetFullTimeEmployeeById(t *testing.T) {
 	}{
 		{
 			id:  1,
-			dni: "1",
+			dni: "123456",
 			mockFunc: func() {
 				GetEmployeeById = func(id int) (Employee, error) {
 					return Employee{
@@ -22,11 +22,25 @@ func TestGetFullTimeEmployeeById(t *testing.T) {
 				GetPersonByDNI = func(dni string) (Person, error) {
 					return Person{
 						Name: "Christian",
-						Age:  35,
-						DNI:  "1",
+						Age:  24,
+						DNI:  "123456",
 					}, nil
 				}
 			},
+			expectedEmployee: FullTimeEmployee{
+				Person: Person{
+					DNI:  "123456",
+					Name: "Christian",
+					Age:  24,
+				},
+				Employee: Employee{
+					Id:       1,
+					Position: "CEO",
+				},
+			},
 		},
 	}
+	originalGetEmployeeById := GetEmployeeById
+	originalGetPersonByDNI := GetPersonByDNI
+
 }
