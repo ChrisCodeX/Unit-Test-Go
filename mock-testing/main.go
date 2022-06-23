@@ -5,3 +5,7 @@ type Person struct {
 	Name string
 	Age  int
 }
+type Employee struct {
+	Id       int
+	Position string
+}
