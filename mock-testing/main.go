@@ -21,7 +21,7 @@ var GetPersonByDNI = func(dni string) (Person, error) {
 	return Person{}, nil
 }
 
-func GetEmployeeById(id int) (Employee, error) {
+var GetEmployeeById = func(id int) (Employee, error) {
 	time.Sleep(5 * time.Second)
 	return Employee{}, nil
 }
