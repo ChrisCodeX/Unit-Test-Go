@@ -39,5 +39,5 @@ func GetFullTimeEmployeeById(id int, dni string) (FullTimeEmployee, error) {
 		return ftEmployee, err
 	}
 	ftEmployee.Person = p
-
+	return ftEmployee, nil
 }
