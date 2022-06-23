@@ -16,16 +16,23 @@ type FullTimeEmployee struct {
 	Person
 }
 
-func GetPersonByDNI(dni string) (Person, error) {
+var GetPersonByDNI = func(dni string) (Person, error) {
 	time.Sleep(5 * time.Second)
 	return Person{}, nil
 }
 
-func GetEmployeeById(id string) (Employee, error) {
+func GetEmployeeById(id int) (Employee, error) {
 	time.Sleep(5 * time.Second)
 	return Employee{}, nil
 }
 
 func GetFullTimeEmployeeById(id int, dni string) (FullTimeEmployee, error) {
 	var ftEmployee FullTimeEmployee
+
+	e, err := GetEmployeeById(id)
+	if err != nil {
+		return ftEmployee, err
+	}
+	ftEmployee.Employee = e
+
 }
