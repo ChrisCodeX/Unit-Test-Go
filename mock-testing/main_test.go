@@ -42,5 +42,11 @@ func TestGetFullTimeEmployeeById(t *testing.T) {
 	}
 	originalGetEmployeeById := GetEmployeeById
 	originalGetPersonByDNI := GetPersonByDNI
-
+	for _, test := range table {
+		test.mockFunc()
+		ft, err := GetFullTimeEmployeeById(test.id, test.dni)
+		if err != nil {
+			t.Errorf("Error when getting Employee")
+		}
+	}
 }
