@@ -9,3 +9,7 @@ type Employee struct {
 	Id       int
 	Position string
 }
+type FullTimeEmployee struct {
+	Employee
+	Person
+}
