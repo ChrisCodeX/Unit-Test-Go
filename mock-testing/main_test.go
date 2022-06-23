@@ -62,10 +62,15 @@ func TestGetFullTimeEmployeeById(t *testing.T) {
 		if ft.Age != test.expectedEmployee.Age {
 			t.Errorf("Age was incorrect, got %d, expected", ft.Age, test.expectedEmployee.Age)
 		}
-		// Test for position Property
-		if ft.Position != test.expectedEmployee.Position {
-			t.Errorf("Position was incorrect, got %d, expected %d", ft.Position, test.expectedEmployee.Position)
+
+		// Test for Id Property
+		if ft.Id != test.expectedEmployee.Id {
+			t.Errorf("Id was incorrect, got %d, expected %d", ft.Id, test.expectedEmployee.Id)
 		}
 
+		// Test for Position Property
+		if ft.Position != test.expectedEmployee.Position {
+			t.Errorf("Position was incorrect, got %s, expected %s", ft.Position, test.expectedEmployee.Position)
+		}
 	}
 }
